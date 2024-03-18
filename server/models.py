@@ -23,8 +23,7 @@ class Author(db.Model):
         print (f'len: {len(number)}')
         if len(number) == 10 and number.isdigit():
             return number
-        print('fail')
-        raise ValueError('asdf')
+        raise ValueError()
 
     def __repr__(self):
         return f'Author(id={self.id}, name={self.name})'
